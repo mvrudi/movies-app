@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+}
+
+#form {
+    margin-top: 25px;
+    text-align: left;
+}
+
+#buttons {
+    text-align: left;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#title {
+    font-size: 100px;
+    font-family: helvetica;
+    font-weight: bold;
+    color:white;
+    border-color: orangered;
+}
+
+.lead{
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+}
+
+.jumbotron {
+    background:white;
+    background-image: url('../images/film.jpg');
+    background-position: center;
+    background-size: cover;
+}
