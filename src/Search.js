@@ -13,7 +13,7 @@ export default class Search extends React.Component {
         }
       }
 
-    listMoviesPopular() {
+    listMoviesPopular = () => {
 
     fetch(API_SERVER + '/movie/now_playing?api_key=' + API_KEY)
     .then((result) => {
@@ -41,7 +41,7 @@ export default class Search extends React.Component {
     );   
     }
       
-    searchMovies(e) {
+    searchMovies = (e) => {
     e.preventDefault();
     let movieSearch = this.state.movie
 
@@ -74,12 +74,12 @@ export default class Search extends React.Component {
         }
     }
 
-    handleChange (e) {
+    handleChange = (e) => {
     const movie = e.target.value;
     this.setState ({ movie: movie });
     }
 
-    clearMovies(e) {
+    clearMovies = (e) => {
         this.setState ({ movies: [], search:[], movie:''})
         this.refs.inputForm.value='';
     }
@@ -90,24 +90,24 @@ export default class Search extends React.Component {
                 <div id="buttons">
                     <button
                         className="btn btn-outline-dark btn-lg ml-4"
-                        onClick={this.listMoviesPopular.bind(this)}
+                        onClick={this.listMoviesPopular}
                         >Popular Movies
                     </button>
 
                     <button 
                         className="btn btn-outline-dark btn-lg ml-4"
-                        onClick={this.clearMovies.bind(this)}
+                        onClick={ this.clearMovies }
                         >Clear
                     </button>
                 </div>
                 <br/>
             <div id="form">
-                <form onSubmit= {this.searchMovies.bind(this)}>
+                <form onSubmit= {this.searchMovies}>
                 <input 
                         type="text" 
                         ref="inputForm"
                         className="form-control-lg col-sm-6 ml-4 mr-4"
-                        onChange={this.handleChange.bind(this)}
+                        onChange={this.handleChange}
                         placeholder="type your search here"
                     />
                     <br/>
