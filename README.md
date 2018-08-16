@@ -1,3 +1,13 @@
+INSTRUCTIONS:
+
+1 - Considering you have a Node.js installed, run the commands below in the add directory:
+
+npm run build
+npm start (this command will open the app in the address http://localhost:3000/)
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
