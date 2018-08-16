@@ -2,8 +2,8 @@ INSTRUCTIONS:
 
 1 - Considering you have a Node.js installed, run the commands below in the add directory:
 
-npm run build
-npm start (this command will open the app in the address http://localhost:3000/)
+npm run build<br />
+npm start<br /> (this command will open the app in the address http://localhost:3000/)
 
 
 
